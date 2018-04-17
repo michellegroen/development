@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<script src="about.js"></script>
+<title></title>
+</head>
+<body>
+
+
+
+<img id="image" src="foto.jpg"/>
+<p id="text">Display text</p>
+
+
+
+<script>
+  var test = document.getElementById("img");
+  
+  
+  
+  // this handler will be executed every time the cursor is moved off a different list-item
+  test.addEventListener("mouseover", function( event ) {   
+    // highlight the mouseout target
+    event.target.text = Display text;
+
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style.color = "";
+    }, 500);
+  }, false);
+</script>
+</body>
