@@ -1,15 +1,17 @@
+//using the variable ordercount and giving it a value of 0
 let orderCount = (0);
+//below the function takeOrder, with two parameters topping and crustType
 const takeOrder = (topping, crustType) => {
-  orderCount++;
-  console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+  orderCount++; //within the function: every time a order is being made the value of ordercount + 1
+  console.log('Order: ' + crustType + ' pizza topped with ' + topping); //using console.log displaying the order and the values are below
 };
 
-const getSubTotal = (itemCount)=> {
-    return itemCount * 7.5;
+const getSubTotal = (orderCount)=> { //a new function named getSubTotal, with one parameter itemCount
+    return orderCount * 7.5; //because there are three orders, given within the function above, times 7.5 (price of pizza) is the total of the bill
 }
 
-takeOrder('mushroom', 'thin crust');
+takeOrder('mushroom, peppers and pepperoni', 'thin crust');
 takeOrder('spinach', 'whole wheat');
 takeOrder('pepperoni', 'brooklyn style');
 
-console.log(getSubTotal(orderCount));
+console.log(getSubTotal(orderCount));//given the price from the function getSubTotal

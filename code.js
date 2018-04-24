@@ -9,7 +9,7 @@ console.log(celsius);
 let fahrenheit = 
     Math.floor(celsius * (9/5)+32);
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
-
+//this is the seems technique as with fahrenheit, only a different formula  
 let newton = 
     Math.floor(celsius * (33/100));
 console.log(newton);
