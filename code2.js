@@ -10,8 +10,8 @@ const getSubTotal = (orderCount)=> { //a new function named getSubTotal, with on
     return orderCount * 7.5; //because there are three orders, given within the function above, times 7.5 (price of pizza) is the total of the bill
 }
 
-takeOrder('mushroom, peppers and pepperoni', 'thin crust');
-takeOrder('spinach', 'whole wheat');
-takeOrder('pepperoni', 'brooklyn style');
+takeOrder('mushroom, peppers and pepperoni', 'thin crust');//value of the parameters
+takeOrder('spinach', 'whole wheat');//value of the parameters
+takeOrder('pepperoni', 'brooklyn style');//value of the parameters
 
 console.log(getSubTotal(orderCount));//given the price from the function getSubTotal
